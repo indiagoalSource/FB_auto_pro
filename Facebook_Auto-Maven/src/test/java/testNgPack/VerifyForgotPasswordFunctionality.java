@@ -74,7 +74,10 @@ public class VerifyForgotPasswordFunctionality extends Base{
 	
 	@Test (priority = 1)
 	public void verifyTextOnForgotPasswordPage() {
-		testID ="T001";
+		
+		//testID ="T001";
+		//test id changes 
+		testID = "T0010"
 		String actualMsg = forgotPassword.getTextMessage();
 		String expectedMsg = "Please enter your email address or mobile number to search for your account.";
 
