@@ -50,10 +50,10 @@ public class Utility {
 		}
 		catch(IllegalStateException e){
 			
-			double value =  book.getSheet(sheetName).getRow(rowNo).getCell(cellNo).getNumericCellValue();
+			double cellValue =  book.getSheet(sheetName).getRow(rowNo).getCell(cellNo).getNumericCellValue();
 			
 			//convert double to string 
-			String data = String.valueOf(value) ;
+			String data = String.valueOf(cellValue) ;
 			return data ;
 			
 		}
