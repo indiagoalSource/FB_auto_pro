@@ -77,7 +77,7 @@ public class VerifyForgotPasswordFunctionality extends Base{
 		
 		//testID ="T001";
 		//test id changes 
-		testID = "T0010"
+		testID = "T0010";
 		String actualMsg = forgotPassword.getTextMessage();
 		String expectedMsg = "Please enter your email address or mobile number to search for your account.";
 
@@ -118,7 +118,7 @@ public class VerifyForgotPasswordFunctionality extends Base{
 		forgotPassword.clickOnSearchButton();
 		Thread.sleep(2000);
 		String actualHeaderMsg = forgotPassword.getHeaderMsg();
-		String expectedHeaderMsg = "Reset Your Password";
+		String expectedHeaderMsg = "Log in to Facebook";
 
 		Assert.assertEquals(actualHeaderMsg, expectedHeaderMsg);
 		

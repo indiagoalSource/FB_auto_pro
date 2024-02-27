@@ -4,49 +4,49 @@
   <test thread-count="3" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testNgPack.VerifyLoginAndCreteNewAccFunctionality">
+      <class name="testNgPack.VerifyForgotPasswordFunctionality">
         <methods>
+          <include name="verifySearchButtonFunctionalityWithCorrectId"/>
           <include name="clearObjects"/>
+          <include name="openLoginPage"/>
           <include name="openBrowser"/>
-          <include name="createPOMObject"/>
-          <include name="openLogInPageOnApplication"/>
-          <include name="closeBrowser"/>
           <include name="logOutFromApplication"/>
-          <include name="verifyLoginFunctionality"/>
+          <include name="CreatePOMObjects"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testNgPack.VerifyLoginAndCreteNewAccFunctionality -->
+      </class> <!-- testNgPack.VerifyForgotPasswordFunctionality -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
   <test thread-count="3" parallel="classes" name="EdgeTest(failed)">
     <parameter name="browser" value="Edge"/>
     <classes>
-      <class name="testNgPack.VerifyLoginAndCreteNewAccFunctionality">
+      <class name="testNgPack.VerifyForgotPasswordFunctionality">
         <methods>
+          <include name="verifySearchButtonFunctionalityWithCorrectId"/>
           <include name="clearObjects"/>
-          <include name="createPOMObject"/>
+          <include name="openLoginPage"/>
           <include name="openBrowser"/>
-          <include name="openLogInPageOnApplication"/>
-          <include name="closeBrowser"/>
           <include name="logOutFromApplication"/>
-          <include name="verifyLoginFunctionality"/>
+          <include name="CreatePOMObjects"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testNgPack.VerifyLoginAndCreteNewAccFunctionality -->
+      </class> <!-- testNgPack.VerifyForgotPasswordFunctionality -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
   <test thread-count="3" parallel="classes" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="testNgPack.VerifyLoginAndCreteNewAccFunctionality">
+      <class name="testNgPack.VerifyForgotPasswordFunctionality">
         <methods>
+          <include name="verifySearchButtonFunctionalityWithCorrectId"/>
           <include name="clearObjects"/>
-          <include name="createPOMObject"/>
+          <include name="openLoginPage"/>
           <include name="openBrowser"/>
-          <include name="openLogInPageOnApplication"/>
-          <include name="closeBrowser"/>
           <include name="logOutFromApplication"/>
-          <include name="verifyLoginFunctionality"/>
+          <include name="CreatePOMObjects"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testNgPack.VerifyLoginAndCreteNewAccFunctionality -->
+      </class> <!-- testNgPack.VerifyForgotPasswordFunctionality -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite_2] -->

@@ -77,7 +77,7 @@ public class VerifyLoginAndCreteNewAccFunctionality extends Base{
 		loginPage.sendPassword(Utility.getExcelData("my2ndsheet", 1, 5));
 		loginPage.clickOnLoginButoon();
 		String actualTextMsg = loginPage.getTextMsgAfterLogin();
-		String expectedTextMsg = "The email address or mobile number you entered isn't connected to an account. Find your account and log ";
+		String expectedTextMsg = "The email address or mobile number you entered isn't connected to an account. Find your account and log in.";
 		
 		Assert.assertEquals(actualTextMsg, expectedTextMsg);
 	}

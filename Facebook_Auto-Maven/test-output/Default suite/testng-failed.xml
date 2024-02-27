@@ -3,15 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNgPack.VerifyLoginAndCreteNewAccFunctionality">
+      <class name="testNgPack.VerifyForgotPasswordFunctionality">
         <methods>
+          <include name="verifySearchButtonFunctionalityWithCorrectId"/>
+          <include name="clearObjects"/>
+          <include name="openLoginPage"/>
           <include name="openBrowser"/>
-          <include name="creatNewAccFormFunctionality"/>
-          <include name="openLogInPageOnApplication"/>
-          <include name="closeBrowser"/>
           <include name="logOutFromApplication"/>
+          <include name="verifyCancelButtonOnForgotPasswordPage"/>
+          <include name="CreatePOMObjects"/>
+          <include name="closeBrowser"/>
+          <include name="verifySearchButtonFunctionalityWithWrongId"/>
+          <include name="verifyTextOnForgotPasswordPage"/>
         </methods>
-      </class> <!-- testNgPack.VerifyLoginAndCreteNewAccFunctionality -->
+      </class> <!-- testNgPack.VerifyForgotPasswordFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
