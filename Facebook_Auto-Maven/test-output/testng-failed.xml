@@ -26,8 +26,8 @@
       <class name="testNgPack.VerifyForgotPasswordFunctionality">
         <methods>
           <include name="verifySearchButtonFunctionalityWithCorrectId"/>
-          <include name="openLoginPage"/>
           <include name="clearObjects"/>
+          <include name="openLoginPage"/>
           <include name="openBrowser"/>
           <include name="logOutFromApplication"/>
           <include name="CreatePOMObjects"/>
