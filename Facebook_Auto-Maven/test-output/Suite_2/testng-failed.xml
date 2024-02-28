@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [Suite_2]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="ExtendsReport.ExtentTestNGIReporterListener"/>
+  </listeners>
   <test thread-count="3" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
@@ -23,8 +26,8 @@
       <class name="testNgPack.VerifyForgotPasswordFunctionality">
         <methods>
           <include name="verifySearchButtonFunctionalityWithCorrectId"/>
-          <include name="clearObjects"/>
           <include name="openLoginPage"/>
+          <include name="clearObjects"/>
           <include name="openBrowser"/>
           <include name="logOutFromApplication"/>
           <include name="CreatePOMObjects"/>
