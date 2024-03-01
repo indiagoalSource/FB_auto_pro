@@ -77,7 +77,7 @@ public class VerifyForgotPasswordFunctionality extends Base{
 	
 	
 	@BeforeMethod
-	public void openLoginPage() {
+	public void openLoginPageOrOpenApplication() {
 		
 		driver.get("https://www.facebook.com/");
 		loginPage.clickOnForgotPassword();
@@ -86,7 +86,7 @@ public class VerifyForgotPasswordFunctionality extends Base{
 	@Test (priority = 1)
 	public void verifyTextOnForgotPasswordPage() {
 		
-		//testID ="T001";
+		testID ="T001";
 		//test id changes 
 		testID = "T0010";
 		String actualMsg = forgotPassword.getTextMessage();
