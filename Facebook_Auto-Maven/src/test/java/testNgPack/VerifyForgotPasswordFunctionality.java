@@ -37,6 +37,7 @@ public class VerifyForgotPasswordFunctionality extends Base{
 	static ExtentTest test ;
 	static ExtentHtmlReporter reporter ;
 	
+	
 	@Parameters("browser")
 	@BeforeTest
 	public void openBrowser(String browserName) {
@@ -82,6 +83,7 @@ public class VerifyForgotPasswordFunctionality extends Base{
 		driver.get("https://www.facebook.com/");
 		loginPage.clickOnForgotPassword();
 	}
+	
 	
 	@Test (priority = 1)
 	public void verifyTextOnForgotPasswordPage() {
