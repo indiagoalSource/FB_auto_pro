@@ -63,6 +63,7 @@ public class VerifyLoginAndCreteNewAccFunctionality extends Base{
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+		
 	}
 	
 	
